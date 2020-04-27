@@ -320,8 +320,6 @@
                       <!-- Message End -->
                     </a>
                   </div>
-
-
                 </a>
             </li>
             <li class="nav-item">
@@ -415,60 +413,135 @@
                 </ol>
               </nav>
             </div>
-            <div class="col-lg-6 col-5 text-right">
-              <a href="#" class="btn btn-sm btn-neutral">Edit</a>
-              <a href="#" class="btn btn-sm btn-neutral">Save</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Page content -->
-    <div class="container-fluid mt--6">
-
-      <div class="card">
-        <!-- Card header -->
-        <div class="card-header border-0">
-          <h3 class="mb-0">Transaksi Bengkel</h3>
-        </div>
-        <div class="row">
-
-
-          <form class="form-inline" action="/action_page.php">
-            <label for="namaBengkel">Nama Bengkel:</label>
-            <input type="namaBengkel" id="namaBengkel" placeholder="Bengkel Cimory" name="namaBengkel">
-            <label for="alamatBengkel">Alamat Bengkel:</label>
-            <input type="alamatBengkel" id="alamatBengkel" placeholder="Jl. Kenari" name="alamatBengkel">
-
-
-
-        </div>
-
-
-      </div>
-
-      <!-- Footer -->
-      <footer class="footer pt-0">
-        <div class="row align-items-center justify-content-lg-between">
-          <div class="col-lg-6">
-            <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2020
-              <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Monyoo Tim</a>
+     <!-- BengkelMobilStart -->
+     <div class="table">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Transaksi Bengkel</h1>
+              <div class="table-responsive">
+                <table id="mytable" class="table table-bordred table-striped">
+                  <thead>
+                    <th>
+                    </th>
+                    <th>Debit</th>
+                    <th>Kredit</th>
+                    <th>Balance</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="checkthis" />
+                      </td>
+                      <td>Rp 200.000</td>
+                      <td>Rp 100.000</td>
+                      <td>Rp 100.000</td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Edit">
+                          <button onclick="document.getElementById('id04').style.display='block'" data-title="Edit" class="btn btn-primary btn-xs">
+                            <span>
+                              <i class="fas fa-pencil-alt"></i>
+                            </span>
+                          </button>
+                        </p>
+                      </td>
+                      <td>
+                        <p data-placement="top" data-toggle="tooltip" title="Delete">
+                          <button onclick="document.getElementById('id03').style.display='block'" data-title="Delete" class="btn btn-danger btn-xs">
+                            <span>
+                              <i class="fas fa-trash-alt"></i>
+                            </span>
+                          </button>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <!-- footer -->
+                <div class="clearfix"></div>
+                <ul class="pagination pull-right">
+                  <li class="disabled">
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-chevron-left"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="#">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+                  <li>
+                    <a href="#">5</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-chevron-right"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+  
+              </div>
+  
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+        <!-- footer -->
+  
+        <!-- ModalDelete -->
+        <div id="id03" class="modal">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="container">
+              <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+              <div class="modal-body">
+  
+                <div class="alert alert-danger">
+                  <span>
+                    <i class="fas fa-exclamation-circle"></i>
+                  </span> Are you sure you want to delete this Record?</div>
+  
+              </div>
+              <div class="modal-footer ">
+                <button type="button" class="btn btn-success">
+                  <span></span> Yes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <span></span> No</button>
+              </div>
+            </div>
+  
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+          </form>
+        </div>
+        <!-- ModalDeleteEnd -->
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
-  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/js-cookie/js.cookie.js"></script>
+  <script src="/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
   <!-- Argon JS -->
-  <script src="../assets/js/argon.js?v=1.2.0"></script>
+  <script src="/js/argon.js?v=1.2.0"></script>
 </body>
 
 </html>

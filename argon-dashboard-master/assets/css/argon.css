@@ -29890,3 +29890,249 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
 }
 
+/* The Modal (background) */
+.modal {
+  margin-left:200px;
+  display: none; /* Hidden by default */
+  position: relative; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.alamatBengkel {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+span.alamatBengkel {
+    float: right;
+    padding-top: 6px;
+  }
+
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 4px 8px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 1200px)
+{
+    .modal {
+        margin-left:200px;
+        width:50%;
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 30%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 50%; /* Could be more or less, depending on screen size */
+      }
+      .modal-content .container{
+          height:100%;
+          margin-top:20px;
+
+      }
+
+}
+
+  @media (min-width: 768px)
+{
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+}
+
+@media (min-width: 576px)
+{
+    .modal {
+        margin-left:200px;
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: -200px;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+}
+
+@media (min-width: 360px)
+{
+    .modal {
+        margin-left:200px;
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: -200px;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+}
+
+.btn_3 {
+    background-image: linear-gradient(to right, #2a5194 0%, #2473fa 51%, #8093ff 100%);
+    display: inline-block;
+    padding: 8px;
+    margin-top:20px;
+    width:200px;
+    font-size: 14px;
+    color: #fff;
+    text-align:center;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    text-transform: capitalize;
+    background-size: 200% auto;
+    border: 1px solid transparent;
+    box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
+  }
+
+  .tab-content ul {
+    list-style-type: none;
+  }
+  
+  .tab-content li {
+    display: inline-block;
+  }
+  
+  .tab-content input[type="checkbox"][id^="myCheckbox"] {
+    display: none;
+  }
+  
+  .tab-content label {
+    border: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .tab-content label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  
+  .tab-content label img {
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  
+  .tab-content :checked + label {
+    border-color: #ddd;
+  }
+  
+  .tab-content :checked + label:before {
+    content: "✓";
+    background-color: grey;
+    transform: scale(1);
+  }
+  
+  .tab-content :checked + label img {
+    transform: scale(0.9);
+    /* box-shadow: 0 0 5px #333; */
+    z-index: -1;
+  }
+

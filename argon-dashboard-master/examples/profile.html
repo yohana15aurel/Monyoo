@@ -187,12 +187,9 @@
                       <!-- Message End -->
                     </a>
                   </div>
-
-
                 </a>
             </li>
             </li>
-
             <!--  Dropdown Menu -->
             <li class="nav-item dropdown">
               <a class="nav-link" data-toggle="dropdown" href="#">
@@ -320,8 +317,6 @@
                       <!-- Message End -->
                     </a>
                   </div>
-
-
                 </a>
             </li>
             <li class="nav-item">
@@ -340,20 +335,6 @@
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-default border-bottom">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Search form -->
-          <!-- <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
-            <div class="form-group mb-0">
-              <div class="input-group input-group-alternative input-group-merge">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fas fa-search"></i></span>
-                </div>
-                <input class="form-control" placeholder="Search" type="text">
-              </div>
-            </div>
-            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </form> -->
           <!-- Navbar links -->
           <ul class="navbar-nav align-items-center  ml-md-auto ">
             <li class="nav-item d-xl-none">
@@ -411,6 +392,78 @@
             <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned
               tasks</p>
             <a href="#profile" class="btn btn-neutral">Edit profile</a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto" class="btn btn-neutral">
+              Add Bengkel</button>
+            <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="container">
+                  <label for="namaBengkel">
+                    <b>Nama Bengkel</b>
+                  </label>
+                  <input type="text" placeholder="Masukkan Nama Bengkel" name="namaBengkel" required>
+
+                  <label for="alamatBengkel">
+                    <b>Alamat Bengkel</b>
+                  </label>
+                  <input type="text" placeholder="Masukkan Alamat Bengkel" name="alamatBengkel" required>
+                  <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                  <label for="layananBengkel">
+                    <b>Layanan Bengkel (Pilih Sesuai Jenis Bengkel Anda)</b>
+                  </label>
+                      <p><strong>1. Bengkel Mobil</strong></p>
+                      <div class="option" style="margin-top:-20px">
+                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <label for="vehicle1">Tune Up</label>
+                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                      <label for="vehicle2">Body Repair</label>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Ganti Oli Mobil</label>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Ganti Ban</label>
+                    </div>
+                  <br>
+                  <p style="margin-top:-20px"><strong>2. Bengkel Motor</strong></p>
+                  <div class="option" style="margin-top:-20px">
+                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <label for="vehicle1">Ganti Oli</label>
+                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                      <label for="vehicle2">Tambal Ban</label>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Tune Up Motor Injeksi</label>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Tune Up Motor Karburator</label>
+                  <br>
+                </div>
+                  <p><strong>3. Cuci Mobil</strong></p>
+                  <div class="option" style="margin-top:-20px">
+                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <label for="vehicle1">Cuci Eksterior Reguler</label>
+                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                      <label for="vehicle2">Cuci Mobil Besar</label>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Cuci Eksterior Mobil Besar</label><br>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Cuci Mobil Reguler</label>
+                    </div>
+                  <br>
+                  <p style="margin-top:-20px"><strong>4. Cuci Motor</strong></p>
+                  <div class="option" style="margin-top:-20px">
+                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <label for="vehicle1">Ganti Oli</label>
+                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                      <label for="vehicle2">Tambal Ban</label>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Tune Up Motor Injeksi</label>
+                      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                      <label for="vehicle3">Tune Up Motor Karburator</label>
+                    </div>
+                  <br>
+                  <input type="submit" class="btn_3" value="Submit">
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -539,13 +592,13 @@
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
-  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/js-cookie/js.cookie.js"></script>
+  <script src="/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
   <!-- Argon JS -->
-  <script src="../assets/js/argon.js?v=1.2.0"></script>
+  <script src="/js/argon.js?v=1.2.0"></script>
 </body>
 
 </html>
